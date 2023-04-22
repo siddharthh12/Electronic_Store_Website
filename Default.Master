@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Electronic_store.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div>
+            <table align="center">
+                <tr style="width: 1100px; height: 50px; border-color: #5f98f3; background-color: white">
+                    <td>
+                        <asp:Image ID="Image1" runat="server" Height="100px" Width="100px" ImageUrl="imagess\logo.png" />
+                    </td>
+                    <td style="width: 780px" align="Center">
+                        <asp:Label ID="Label1" runat="server" Text="Electronic Shop" Font-Bold="True" Font-Names="Copperplate Gothic Bold" ForeColor="RoyalBlue" Font-Size="X-Large"></asp:Label>
+                    </td>
+                    <td styel="width:220px; text-align:right">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" Width="50px" ImageUrl="imagess\facebookicon.jpg" />
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="50px" Width="50px" ImageUrl="imagess\instaicon.jpg" />
+                        <asp:ImageButton ID="ImageButton4" runat="server" Height="50" Width="50" CausesValidation="False" ImageUrl="imagess\carticon.jpg" />
+                        <asp:ImageButton ID="ImageButton5" runat="server" Height="50px" Width="50px" ImageUrl="imagess\user.png" OnClick="ImageButton5_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="width: 1100px; height: 25px; background-color: #000000">
+
+                        <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" StaticSubMenuIndent="19px" ForeColor="White">
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="All Product" Value="All Product" NavigateUrl="Product.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Registration" Value="Registration" NavigateUrl="regis.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="User Login" Value="User Login" NavigateUrl="login.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="aboutus.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="contactus.aspx"></asp:MenuItem>
+                            </Items>
+
+                            <StaticMenuItemStyle HorizontalPadding="54px"></StaticMenuItemStyle>
+                        </asp:Menu>
+                    </td>
+                </tr>
+
+                <tr style="width: 1110px; height: 310px:">
+                    <td colspan="3">
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                        <div>
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile2.xml" />
+                                    <asp:Timer ID="Timer1" runat="server" Interval="2500"></asp:Timer>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: right " colspan="3"  >
+                    <a href="https://wa.me/9136309713">
+                        <img alt="Chat on WhatsApp" src="imagess/whatsapp.png" height="40" align="Left"></a>
+
+
+
+                    <asp:Label ID="Label3" Font-Names="Ebrima" runat="server"> </asp:Label>
+                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Ebrima" NavigateUrl="~/Login.aspx" a>Click Here To Login</asp:HyperLink>
+
+                        <asp:Button ID="Button1" runat="server" Text="Logout" Height="40" BackColor="floralwhite" BorderWidth="1px" OnClick="Button1_Click" />
+
+                   </td>
+
+               </tr>
+
+
+                <tr>
+                    <td colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr style="width: 1100px; height: 25px; background-color: black; text-align: center; color: white">
+                    <td colspan="3">© Online Electronic Shopping Pvt. | All Right Reserved.
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+
+</html>

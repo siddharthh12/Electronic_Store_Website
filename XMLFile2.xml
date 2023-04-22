@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>imagess\banner2 (2).png</ImageUrl>
+	</Ad>
+	<Ad>
+		<ImageUrl>imagess\banner1.png</ImageUrl>
+	</Ad>
+	<Ad>
+		<ImageUrl>imagess\banner3.png</ImageUrl>
+	</Ad>
+	
+</Advertisements>

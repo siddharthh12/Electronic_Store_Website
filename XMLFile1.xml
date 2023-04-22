@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisments>
+	<Ad>
+		<ImageUrl>
+			imagess\banner2.jpg
+		</ImageUrl>
+		<NavigateUrl>
+			
+		</NavigateUrl>
+		<AlternateText>
+			Google
+		</AlternateText>
+		<Keyword>Code</Keyword>
+		<Impressions>20</Impressions>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>
+			imagess\banner.jpg
+		</ImageUrl>
+		<NavigateUrl>
+
+		</NavigateUrl>
+		<AlternateText>
+			hello
+		</AlternateText>
+		<Keyword>Code</Keyword>
+		<Impressions>10</Impressions>
+	</Ad>
+</Advertisments>
